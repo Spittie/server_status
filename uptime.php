@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors',1);
+error_reporting(E_ALL);
 function sec2human($time) {
   $seconds = $time%60;
 	$mins = floor($time/60)%60;
@@ -66,3 +68,4 @@ $array['online'] = '<div class="progress">
 </div>';
 
 echo json_encode($array);
+?>
