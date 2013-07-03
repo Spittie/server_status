@@ -16,7 +16,11 @@
 	<div class="navbar navbar-fixed-top">
 	  <div class="navbar-inner">
 	  	<div class="container">
-		    <a class="brand" href="#">server_status</a>
+		    	<ul class="nav">
+				<a class="brand" href="#">server_status</a>
+				<li class="divider-vertical"></li>
+				<li><a href="add/">Add/Remove</a></li>
+			</ul>
 		</div>
 	  </div>
 	</div>
