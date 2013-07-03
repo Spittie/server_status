@@ -1,7 +1,8 @@
 <?php
 
-// PostgreSQL is, currently, not supported
-// 9.1 might work, but it's not tested
+// PostgreSQL 9.1 or newer
+// Mysql
+// SQLite
 
 $db_type = ''; //mysql, pgsql or sqlite
 
