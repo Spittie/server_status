@@ -47,7 +47,7 @@
 	</div>
 	
 	<div class="container">
-		<p style="text-align: center; font-size: 10px;"><a href="https://github.com/thebananafish/server_status">server_status</a></p>
+		<p style="text-align: center; font-size: 10px;"><a href="https://github.com/Spittie/server_status">server_status</a> (based on <a href="https://github.com/thebananafish/server_status">server_status</a>)</p>
 	</div>
 	<script src="<?php echo $template; ?>js/jquery-1.9.1.min.js"></script>
 	<script src="<?php echo $template; ?>js/bootstrap.min.js"></script>

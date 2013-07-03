@@ -1,9 +1,8 @@
-TEST
-
 #server_status
 ============
 
 ServerStatus is based off [BlueVM's](http://uptime.bluevm.com/) Uptime Checker script, [original download and information](http://www.lowendtalk.com/discussion/comment/169690#Comment_169690).
+Modified version, based of [BananaFish's ServerStatus](https://github.com/thebananafish/server_status).
 
 It uses Bootstrap for theming and progress bars.
 
@@ -17,14 +16,14 @@ You can currently see Load, RAM (free), HDD (free) statistics, and if it is onli
 ============
 
 1. Create a database with a user.
-2. Import the servers.sql file in in the /sql/ folder, to populate the database.
-3. Configure /includes/config.php with the database and user information.
+2. Configure /includes/config.php with the database and user information.
 4. Copy uptime.php to any server you want to monitor. This needs to be publicly accessible.
-5. Insert an entry into the database.
+5. Insert an entry into the database. You can use the WebUI under /add
   * name - The name of your server.
   * url - The URL path to the uptime.php file (minus uptime.php and http://) e.g. dns.domain.tld/path/
   * location - Where is your server physically located?
   * type - What type of server is this? DNS, SQL, Apache/nginx, etc.
+6. Delete the WebUI folder (/add) or protect it with HTTP Auth (For Nginx see [here](http://www.howtoforge.com/basic-http-authentication-with-nginx) , for other server use Google)
 
 # Requirements
 ============
@@ -37,7 +36,13 @@ You can currently see Load, RAM (free), HDD (free) statistics, and if it is onli
 **Master Server**:
 * PHP5 + PHP5_CURL
 * Web Server (lighttpd, apache2, nginx, etc.)
-* mySQL server unless you choose to use a remote mySQL server.
+* MySQL Server, or SQLite support within PHP. PostgreSQL 9.1 Might be supported but it's not tested. 8.4 Should work with some edit to the SQL.
+
+# Difference from the original server_status
+* Ported from MySQL_* to PDO
+* Added support for SQLite
+* PostgreSQL is almost supported
+* Basic WebUI
 
 # Note
 ======
