@@ -1,3 +1,5 @@
+TEST
+
 #server_status
 ============
 
