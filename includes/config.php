@@ -8,7 +8,7 @@ $db_type = ''; //mysql, pgsql or sqlite
 // Only for sqlite
 // Insert the full path, should be outside of your public directory
 // Webserver need to be able to write in it
-$db_path = '/srv/http/server_status/db/db.sdb';
+$db_path = '';
 
 // Only for mysql/pgsql
 $host = 'localhost';
