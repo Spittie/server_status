@@ -17,6 +17,7 @@ You can currently see Load, RAM (free), HDD (free) statistics, and if it is onli
 
 1. Create a database with a user.
 2. Configure /includes/config.php with the database and user information.
+3. Run install.php, delete install.php
 4. Copy uptime.php to any server you want to monitor. This needs to be publicly accessible.
 5. Insert an entry into the database. You can use the WebUI under /add
   * name - The name of your server.
@@ -36,12 +37,12 @@ You can currently see Load, RAM (free), HDD (free) statistics, and if it is onli
 **Master Server**:
 * PHP5 + PHP5_CURL
 * Web Server (lighttpd, apache2, nginx, etc.)
-* MySQL Server, or SQLite support within PHP. PostgreSQL 9.1 Might be supported but it's not tested. 8.4 Should work with some edit to the SQL.
+* and SQL server. There's support for MySQL, PostgreSQL > 9.1 and SQLite
 
 # Difference from the original server_status
 * Ported from MySQL_* to PDO
 * Added support for SQLite
-* PostgreSQL is almost supported
+* PostgreSQL 9.1 and newer supported
 * Basic WebUI
 
 # Note
